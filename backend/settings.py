@@ -56,7 +56,7 @@ MIDDLEWARE = [
 
 
 CORS_ALLOWED_ORIGINS = [
-    'https://vaultifyadmin.onrender.com',
+    'https://vaultifyadmin.onrender.com', 'https://vaultifybackend.onrender.com', '*'
 ]
 CORS_ALLOW_CREDENTIALS = True
 
