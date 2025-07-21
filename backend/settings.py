@@ -87,12 +87,23 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.1/ref/settings/#databases
 
+import dj_database_url
+import os
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'vaultifyadmindb',
+        'USER': 'vaultifyadmindb_user',
+        'PASSWORD': 'sZiDhg7pVWRcSrRJdGPijKqymHZGbLZT',
+        'HOST': 'dpg-d1vbld49c44c73dnsj3g-a.oregon-postgres.render.com',
+        'PORT': '5432',
+        'OPTIONS': {
+            'sslmode': 'require',
+        },
     }
 }
+
 
 
 # Password validation
