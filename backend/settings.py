@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-q6)(9p#496c_-@lsvj-bni-l#$^u0cfy$fy^o6%6-3l_ie1rd5
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-
+ALLOWED_HOSTS = [
+    "vaultify-43wm.onrender.com",       # your backend's Render domain
+    "vaultifybackend.onrender.com",         # optional - your custom domain if any
+    "localhost",                        # optional - for local testing
+    "127.0.0.1",                        # optional - for local testing
+]
 
 # Application definition
 
@@ -55,6 +60,7 @@ MIDDLEWARE = [
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "https://vaultifyadmin.onrender.com",  # 👈 Your frontend URL
+    "vaultifyadmin.onrender.com"
 ]
 
 
