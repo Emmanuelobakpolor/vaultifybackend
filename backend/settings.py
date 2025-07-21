@@ -60,7 +60,6 @@ MIDDLEWARE = [
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOWED_ORIGINS = [
     "https://vaultifyadmin.onrender.com",  # 👈 Your frontend URL
-    "vaultifyadmin.onrender.com"
 ]
 
 
